@@ -43,14 +43,38 @@ main {
     margin: 15px;
 }
 
-h1.product-category {
+h1.product-category, p.product-desc {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    letter-spacing: 5px;
     color: hsl(228, 12%, 48%);
+}
+
+h1.product-category {
+    letter-spacing: 5px;
     font-weight: 700;
+}
+
+p.product-desc {
+    line-height: 23px;
 }
 
 h2.product-name {
     font-family: 'Fraunces', serif;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.price-main {
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+.price-sub {
+    display: inline-block;
+    text-decoration: line-through;
+    
 }
