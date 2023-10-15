@@ -70,6 +70,7 @@ h2.product-name {
     line-height: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
+    color: hsl(212, 21%, 14%);
 }
 
 .price-main {
@@ -97,6 +98,10 @@ button.cart-btn {
     font-weight: 700;
 }
 
+button.cart-btn:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
 .icon-cart {
     position: relative;
     margin-right: 12px;
@@ -107,8 +112,8 @@ button.cart-btn {
 
     main {
         flex-direction: row;
-        width: 510px;
-        height: 400px;
+        width: 560px;
+        height: 415px;
     }
 
     .content-image {
@@ -118,6 +123,24 @@ button.cart-btn {
         height: 100%;
         border-bottom-left-radius: var(--rad);
         border-top-left-radius: var(--rad);
+    }
+
+    .content-desc {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        padding: 5px;
+    }
+
+    button.cart-btn {
+        width: 90%;
+        align-self: center;
+        /* align-self: center; */
+
+    }
+
+    h2.product-name {
+        margin-bottom: 10px;
     }
 
 }
