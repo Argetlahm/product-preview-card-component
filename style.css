@@ -43,9 +43,12 @@ main {
     margin: 15px;
 }
 
-h1.product-category, p.product-desc, .price-sub {
+h1.product-category, p.product-desc, .price-sub, .cart-btn {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+}
+
+h1.product-category, p.product-desc, .price-sub {
     color: hsl(228, 12%, 48%);
 }
 
@@ -89,4 +92,32 @@ button.cart-btn {
     height: 50px;
     background-color: hsl(158, 36%, 37%);
     border-radius: 7px;
+    margin-top: 15px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.icon-cart {
+    position: relative;
+    margin-right: 12px;
+    top: 4px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    main {
+        flex-direction: row;
+        width: 510px;
+        height: 400px;
+    }
+
+    .content-image {
+        --rad: 10px;
+        content: url("images/image-product-desktop.jpg");
+        width: 50%;
+        height: 100%;
+        border-bottom-left-radius: var(--rad);
+        border-top-left-radius: var(--rad);
+    }
+
 }
